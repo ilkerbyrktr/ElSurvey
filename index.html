@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">This survey is about programming Languages.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Name: <input id="name" type="text" placeholder="Your name" required
+        /></label>
+        <label for="email" id="email-label">
+          Email: <input id="email" type="email" placeholder="Email" required
+        /></label>
+        <label for="number" id="number-label">
+          Years of Experience:
+          <input
+            id="number"
+            type="number"
+            placeholder="0 to 50"
+            min="0"
+            max="50"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What is your goal?</label>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Frontend Developer</option>
+          <option value="2">Backend Developer</option>
+          <option value="3">Fullstack Developer</option>
+          <option value="4">AI developer</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>How many Programming Languages do you know?</legend>
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="programming-number"
+            value="1"
+          />
+          0-1
+        </label>
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="programming-number"
+            value="2"
+          />
+          1-4
+        </label>
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="programming-number"
+            value="3"
+          />
+          5-8
+        </label>
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="programming-number"
+            value="4"
+          />
+          8+
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Check if you know</legend>
+        <label for="c-c++"
+          ><input type="checkbox" class="inline" name="c-c++" value="c-c++" />
+          C/C++
+        </label>
+        <label for="csharp"
+          ><input type="checkbox" class="inline" name="csharp" value="csharp" />
+          C#
+        </label>
+        <label for="python"
+          ><input type="checkbox" class="inline" name="python" value="python" />
+          Python
+        </label>
+        <label for="javascript"
+          ><input
+            type="checkbox"
+            class="inline"
+            name="javascript"
+            value="javascript"
+          />
+          JavaScript</label
+        >
+        <label for="java"
+          ><input type="checkbox" class="inline" name="java" value="java" />
+          Java
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >What do you thing about your future career:<textarea
+            placeholder="I like to retire to a farm"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
